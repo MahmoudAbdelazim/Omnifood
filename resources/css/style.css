@@ -16,14 +16,46 @@ html {
     text-rendering: optimizeLegibility;
 }
 
-h1 {
-    margin: 0;
-    color: #fff;
-    font-size: 240%;
+section {
+    padding: 80px 0;
+}
+
+h1,
+h2,
+h3 {
     font-weight: 400;
     text-transform: uppercase;
-    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 240%;
+    margin: 0;
+    color: #fff;
     word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 115%;
+    word-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+h2::after {
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 300px;
+    margin: 30px auto;
 }
 
 /*---------------------------------*/
@@ -33,6 +65,15 @@ h1 {
 .row {
     max-width: 1140px;
     margin: 0 auto
+}
+
+.box {
+    padding: 1%;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
 }
 
 .btn,
@@ -78,12 +119,40 @@ h1 {
 }
 
 /*---------------------------------*/
+/* PARAGRAPHS */
+/*---------------------------------*/
+
+.long-copy {
+    line-height: 145%;
+    padding: 0 15%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/*---------------------------------*/
+/* ICONS */
+/*---------------------------------*/
+
+.icon-big {
+    font-size: 250%;
+    color: #e67e22;
+   width: fit-content;
+    margin-bottom: 15px;
+    opacity: 0.75;
+    transition: opacity 0.2s;
+}
+
+.icon-big:hover {
+    opacity: 1.0;
+}
+
+/*---------------------------------*/
 /* HEADER */
 /*---------------------------------*/
 
 header {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(images/hero.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url(images/hero.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
