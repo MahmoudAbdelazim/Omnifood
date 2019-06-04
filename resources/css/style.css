@@ -1,3 +1,6 @@
+/*---------------------------------*/
+/* GENERAL */
+/*---------------------------------*/
 * {
     margin: 0;
     padding: 0;
@@ -23,25 +26,13 @@ h1 {
     word-spacing: 4px;
 }
 
+/*---------------------------------*/
+/* REUSABLE COMPONENTS */
+/*---------------------------------*/
+
 .row {
     max-width: 1140px;
     margin: 0 auto
-}
-
-header {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(images/hero.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-}
-
-.hero-text-box {
-    position: absolute;
-    width: 1140px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .btn,
@@ -86,3 +77,57 @@ header {
     color: #fff;
 }
 
+/*---------------------------------*/
+/* HEADER */
+/*---------------------------------*/
+
+header {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    height: 90px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 55px;
+}
+
+.main-nav li a,
+.main-nav li a:visited {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    word-spacing: 3px;
+    font-size: 85%;
+    border: 2px solid transparent;
+    transition: border 0.2s, padding-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #bf6516;
+    padding-bottom: 10px;
+}
