@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: rgb(75, 74, 74);
+    font-family: 'lato', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 240%;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto
+}
+
+header {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 40px;
+    font-weight: 300;
+    text-decoration: none;
+    margin: 20px;
+    color: #fff;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-orange,
+.btn-orange:visited {
+    background-color: #e67e22;
+    border-radius: 20px;
+    color: #fff;
+    border: 1px solid #e67e22;
+}
+
+.btn-outline-orange,
+.btn-outline-orange:visited {
+    border: 1px solid #e67e22;
+    border-radius: 20px;
+    color: #e67e22;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #bf6516;
+}
+
+.btn-orange:hover,
+.btn-orange:active {
+    border: 1px solid #bf6516;
+}
+
+.btn-outline-orange:hover,
+.btn-outline-orange:active {
+    border: 1px solid #bf6516;
+    color: #fff;
+}
+
