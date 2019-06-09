@@ -61,12 +61,13 @@ h2::after {
 .clearfix {
     zoom: 1;
 }
+
 .clearfix:after {
     content: '.';
     clear: both;
     display: block;
     height: 0;
-    visibility: hidden; 
+    visibility: hidden;
 }
 
 /*---------------------------------*/
@@ -91,7 +92,7 @@ h2::after {
 .btn:visited {
     display: inline-block;
     padding: 10px 40px;
-    font-weight: 400;
+    font-weight: 300;
     text-decoration: none;
     margin: 20px;
     color: #fff;
@@ -155,6 +156,14 @@ h2::after {
 
 .icon-big:hover {
     opacity: 1.0;
+}
+
+.icon-small {
+    color: #bf6516;
+    font-size: 90%;
+    margin-right: 10px;
+    line-height: 110%;
+    vertical-align: middle;
 }
 
 /*---------------------------------*/
@@ -284,6 +293,11 @@ header {
 
 .app-screen {
     width: 45%;
+    transition: transform 0.2s;
+}
+
+.app-screen:hover {
+    transform: rotate(5deg);
 }
 
 .works-step {
@@ -317,4 +331,33 @@ header {
 
 .app-btn img:hover {
     opacity: 0.7;
+}
+
+/*---------------------------------*/
+/* CITIES */
+/*---------------------------------*/
+
+.city-box img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.city-feature {
+    margin-top: 10px;
+}
+
+.twitter-link,
+.twitter-link:visited {
+    color: #e67e22;
+    text-decoration: none;
+    transition: color 0.1s , border-bottom 0.1s;
+    font-weight: 300;
+    border-bottom: 1px solid #e67e22;
+    padding-bottom: 3px;
+}
+
+.twitter-link:hover,
+.twitter-link:active {
+    color: #bf6516;
+    border-bottom: 1px solid #bf6516;
 }
