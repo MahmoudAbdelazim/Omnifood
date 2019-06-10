@@ -102,7 +102,8 @@ cite {
 }
 
 .btn,
-.btn:visited {
+.btn:visited,
+input[type=submit] {
     display: inline-block;
     padding: 10px 40px;
     font-weight: 300;
@@ -113,7 +114,8 @@ cite {
 }
 
 .btn-orange,
-.btn-orange:visited {
+.btn-orange:visited,
+input[type=submit] {
     background-color: #e67e22;
     border-radius: 20px;
     color: #fff;
@@ -128,12 +130,16 @@ cite {
 }
 
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active{
     background-color: #bf6516;
 }
 
 .btn-orange:hover,
-.btn-orange:active {
+.btn-orange:active,
+input[type=submit]:hover,
+input[type=submit]:active {
     border: 1px solid #bf6516;
 }
 
@@ -466,3 +472,115 @@ cite img {
     box-shadow: none;
 }
 
+/*---------------------------------*/
+/* CONTACT FORM */
+/*---------------------------------*/
+
+.contact-form {
+    width: 60%;
+    margin:0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px 7px;
+    border-radius: 3px; 
+    border: 1px solid rgb(214, 214, 214);
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+textarea:focus {
+    outline: 1px solid #e67e22;
+}
+
+textarea {
+    height: 120px;
+}
+
+input[type=checkbox] {
+    margin: 10px 10px 10px 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+/*---------------------------------*/
+/* FOOTER */
+/*---------------------------------*/
+
+footer {
+    background-color: #333;
+    color: rgb(233, 233, 233);
+    padding: 40px 0;
+}
+
+.footer-nav {
+    list-style-type: none;
+    float: left;
+}
+
+.social-links {
+    list-style-type: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li a,
+.footer-nav li a:visited,
+.social-links li a,
+.social-links li a:visited {
+    color: rgb(189, 189, 189);
+    text-decoration: none;
+    font-size: 90%;
+    transition: color 0.2s;
+}
+
+.social-links li a,
+.social-links li a:visited {
+    font-size: 110%;
+}
+
+.fa-facebook-square,
+.fa-twitter,
+.fa-google-plus,
+.fa-instagram {
+    transition: color 0.2s;
+}
+
+.fa-facebook-square:hover {
+    color: #3b5998;
+}
+
+.fa-twitter:hover {
+    color: #55acee;
+}
+
+.fa-google-plus:hover {
+    color: #dc4e41;
+}
+
+.fa-instagram:hover {
+    color: #E1306C;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #fff;
+}  
+
+footer p {
+    text-align: center;
+    color: #888;
+    margin-top: 50px;
+    font-size: 90%;
+}
