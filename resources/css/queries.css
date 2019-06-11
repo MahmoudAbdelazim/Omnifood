@@ -187,7 +187,8 @@
     /*---------------------------------*/
 
     .meal-photo img:hover {
-        transform: scale(1.09);
+        -webkit-transform: scale(1.09);
+                transform: scale(1.09);
     }
 
     /*---------------------------------*/

@@ -4,7 +4,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 html,
@@ -112,6 +113,7 @@ input[type=submit] {
     text-decoration: none;
     margin: 20px;
     color: #fff;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
     transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
@@ -169,9 +171,12 @@ input[type=submit]:active {
 .icon-big {
     font-size: 250%;
     color: #e67e22;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     margin-bottom: 15px;
     opacity: 0.75;
+    -webkit-transition: opacity 0.2s;
     transition: opacity 0.2s;
 }
 
@@ -192,6 +197,8 @@ input[type=submit]:active {
 /*---------------------------------*/
 
 header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))),
+        url(images/hero.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
         url(images/hero.jpg);
     background-size: cover;
@@ -205,7 +212,8 @@ header {
     width: 1140px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
 }
 
 .hero-text-box h1 {
@@ -244,6 +252,7 @@ header {
     word-spacing: 3px;
     font-size: 85%;
     border: 2px solid transparent;
+    -webkit-transition: border 0.2s, padding-bottom 0.2s;
     transition: border 0.2s, padding-bottom 0.2s;
 }
 
@@ -282,13 +291,18 @@ header {
 .meal-photo img {
     width: 100%;
     height: auto;
-    transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
     opacity: 0.7;
+    -webkit-transition: opacity 0.25s, -webkit-transform 0.25s;
+    transition: opacity 0.25s, -webkit-transform 0.25s;
     transition: transform 0.25s, opacity 0.25s;
+    transition: transform 0.25s, opacity 0.25s, -webkit-transform 0.25s;
 }
 
 .meal-photo img:hover {
-    transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
     opacity: 1;
 }
 
@@ -314,11 +328,15 @@ header {
 
 .app-screen {
     width: 45%;
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
     transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
 .app-screen:hover {
-    transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
 }
 
 .works-step {
@@ -347,6 +365,7 @@ header {
 .app-btn img {
     width: 150px;
     margin-right: 20px;
+    -webkit-transition: opacity 0.2s;
     transition: opacity 0.2s;
 }
 
@@ -365,6 +384,7 @@ header {
 .city-box {
     padding-bottom: 20px;
     border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.4s;
     transition: border-bottom 0.4s;
 }
 
@@ -385,6 +405,7 @@ header {
 .twitter-link:visited {
     color: #e67e22;
     text-decoration: none;
+    -webkit-transition: color 0.1s , border-bottom 0.1s;
     transition: color 0.1s , border-bottom 0.1s;
     font-weight: 300;
     border-bottom: 1px solid #e67e22;
@@ -402,9 +423,12 @@ header {
 /*---------------------------------*/
 
 .section-testimonials {
-    background-image:linear-gradient(rgba(0,0,0, 0.8), rgb(0,0,0, 0.8)) , url(images/back-customers.jpg);
-    background-position: center;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))),
+    url(images/hero.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(images/hero.jpg);
     background-size: cover;
+    background-position: center;
     background-attachment: fixed;
     color: white;
 }
@@ -468,7 +492,8 @@ cite img {
 }
 
 .plan-box div {
-    box-shadow: 0 2px 2px rgb(245, 245, 245);
+    -webkit-box-shadow: 0 2px 2px rgb(245, 245, 245);
+            box-shadow: 0 2px 2px rgb(245, 245, 245);
 }
 
 .plan-box div:first-child {
@@ -479,7 +504,8 @@ cite img {
     text-align: center;
     border-bottom: none;
     padding: 0;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
 }
 
 /*---------------------------------*/
@@ -552,6 +578,7 @@ footer {
     color: rgb(189, 189, 189);
     text-decoration: none;
     font-size: 90%;
+    -webkit-transition: color 0.2s;
     transition: color 0.2s;
 }
 
@@ -564,6 +591,7 @@ footer {
 .fa-twitter,
 .fa-google-plus,
 .fa-instagram {
+    -webkit-transition: color 0.2s;
     transition: color 0.2s;
 }
 
