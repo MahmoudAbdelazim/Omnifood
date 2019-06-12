@@ -111,6 +111,7 @@
 
     h1 {
         font-size: 200%;
+        margin-top: 50px;
     }
 
     h2 {
@@ -134,6 +135,12 @@
     /* REUSABLE COMPONENTS */
     /*---------------------------------*/
 
+    .btn,
+    .btn:visited {
+        margin: 5px;
+        font-weight: 400;
+    }
+
     .row {
         padding: 0 3%;
     }
@@ -151,8 +158,26 @@
     /* HEADER */
     /*---------------------------------*/
 
+    .mobile-nav-icon {
+        display: inline-block;
+    }
+
     .main-nav {
         display: none;
+        float: left;
+        margin-left: 20%;
+        text-align: center;
+        background-color: rgba(0,0,0,0.1);
+    }
+
+    .sticky .main-nav {
+        margin-left: 27%;
+        background-color: transparent;
+    }
+
+    .main-nav li {
+        display: block;
+        margin: 30px;
     }
 
     .long-copy {
@@ -161,12 +186,6 @@
 
     .hero-text-box {
         padding: 0 3%;
-    }
-
-    .btn,
-    .btn:visited {
-        margin: 5px;
-        font-weight: 400;
     }
 
     /*---------------------------------*/
@@ -188,7 +207,7 @@
 
     .meal-photo img:hover {
         -webkit-transform: scale(1.09);
-                transform: scale(1.09);
+        transform: scale(1.09);
     }
 
     /*---------------------------------*/

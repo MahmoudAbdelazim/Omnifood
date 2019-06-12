@@ -220,11 +220,16 @@ header {
     margin-bottom: 20px;
 }
 
-.logo {
+.logo,
+.logo-black {
     height: 90px;
     width: auto;
     float: left;
     margin-top: 20px;
+}
+
+.logo-black {
+    display: none;
 }
 
 .btn-orange i {
@@ -233,7 +238,9 @@ header {
     margin-right: 10px;
 }
 
+/*Normal nav*/
 .main-nav {
+    display: block;
     float: right;
     list-style: none;
 }
@@ -251,15 +258,81 @@ header {
     text-transform: uppercase;
     word-spacing: 3px;
     font-size: 85%;
-    border: 2px solid transparent;
-    -webkit-transition: border 0.2s, padding-bottom 0.2s;
-    transition: border 0.2s, padding-bottom 0.2s;
+    padding-bottom: 10px;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s, padding-bottom 0.2s;
+    transition: border-bottom 0.2s, padding-bottom 0.2s;
 }
 
 .main-nav li a:hover,
 .main-nav li a:active {
     border-bottom: 2px solid #bf6516;
-    padding-bottom: 10px;
+}
+
+/*Mobile Nav*/
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: rgb(236, 236, 236);
+}
+
+/*Sticky Nav*/
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 999;
+    -webkit-box-shadow: 0px 2px 2px rgb(236, 236, 236);
+            box-shadow: 0px 2px 2px rgb(236, 236, 236);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.3s ease;
+}
+
+.sticky .row .main-nav li a,
+.sticky .row .main-nav li a:visited {
+    color: rgb(31, 31, 31);
+    padding-bottom: 17px;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s, padding-bottom 0.2s;
+    transition: border-bottom 0.2s, padding-bottom 0.2s;
+}
+
+.sticky .row .main-nav li a:hover,
+.sticky .row .main-nav li a:active {
+    border-bottom: 2px solid #bf6516;   
+}
+
+.sticky .logo-black {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 50px;
+}
+
+.sticky .logo {
+    display: none;
+}
+
+.sticky .main-nav li {
+    margin-top: 20px;
+}
+
+.sticky .mobile-nav-icon {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.sticky .mobile-nav-icon i {
+    color: rgb(49, 49, 49);
 }
 
 /*---------------------------------*/
@@ -328,15 +401,6 @@ header {
 
 .app-screen {
     width: 45%;
-    -webkit-transition: -webkit-transform 0.2s;
-    transition: -webkit-transform 0.2s;
-    transition: transform 0.2s;
-    transition: transform 0.2s, -webkit-transform 0.2s;
-}
-
-.app-screen:hover {
-    -webkit-transform: rotate(5deg);
-            transform: rotate(5deg);
 }
 
 .works-step {
@@ -621,4 +685,27 @@ footer p {
     color: #888;
     margin-top: 50px;
     font-size: 90%;
+}
+
+/*---------------------------------*/
+/* Animations */
+/*---------------------------------*/
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3,
+.js--wp-4 {
+    opacity: 0;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated, 
+.js--wp-4.animated {
+    opacity: 1;
+}
+
+.fadeOutUp,
+.fadeInDown {
+    animation-duration: 0.3s;
 }
