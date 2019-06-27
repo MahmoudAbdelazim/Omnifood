@@ -10,8 +10,8 @@
 
 html,
 body {
-    background-color: #fff;
-    color: rgb(75, 74, 74);
+    background-color: #212121;
+    color: #DCEDC8;
     font-family: 'lato', Arial, Helvetica, sans-serif;
     font-size: 20px;
     font-weight: 300;
@@ -55,7 +55,7 @@ h3 {
 h2::after {
     display: block;
     height: 2px;
-    background-color: #e67e22;
+    background-color: #79d400;
     content: " ";
     width: 300px;
     margin: 30px auto;
@@ -117,39 +117,39 @@ input[type=submit] {
     transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
-.btn-orange,
-.btn-orange:visited,
+.btn-green,
+.btn-green:visited,
 input[type=submit] {
-    background-color: #e67e22;
+    background-color: #6fc300;
     border-radius: 20px;
     color: #fff;
-    border: 1px solid #e67e22;
+    border: 1px solid #6fc300;
 }
 
-.btn-outline-orange,
-.btn-outline-orange:visited {
-    border: 1px solid #e67e22;
+.btn-outline-green,
+.btn-outline-green:visited {
+    border: 1px solid #6fc300;
     border-radius: 20px;
-    color: #e67e22;
+    color: #6fc300;
 }
 
 .btn:hover,
 .btn:active,
 input[type=submit]:hover,
 input[type=submit]:active{
-    background-color: #bf6516;
+    background-color: #5ca100;
 }
 
-.btn-orange:hover,
-.btn-orange:active,
+.btn-green:hover,
+.btn-green:active,
 input[type=submit]:hover,
 input[type=submit]:active {
-    border: 1px solid #bf6516;
+    border: 1px solid #5ca100;
 }
 
-.btn-outline-orange:hover,
-.btn-outline-orange:active {
-    border: 1px solid #bf6516;
+.btn-outline-green:hover,
+.btn-outline-green:active {
+    border: 1px solid #5ca100;
     color: #fff;
 }
 
@@ -170,7 +170,7 @@ input[type=submit]:active {
 
 .icon-big {
     font-size: 250%;
-    color: #e67e22;
+    color: #79d400;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
@@ -185,7 +185,7 @@ input[type=submit]:active {
 }
 
 .icon-small {
-    color: #bf6516;
+    color: #AFB42B;
     font-size: 90%;
     margin-right: 10px;
     line-height: 110%;
@@ -198,9 +198,9 @@ input[type=submit]:active {
 
 header {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))),
-        url(images/hero.jpg);
+        url(images/dish.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url(images/hero.jpg);
+        url(images/dish.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -221,18 +221,18 @@ header {
 }
 
 .logo,
-.logo-black {
+.logo-small {
     height: 90px;
     width: auto;
     float: left;
     margin-top: 20px;
 }
 
-.logo-black {
+.logo-small {
     display: none;
 }
 
-.btn-orange i {
+.btn-green i {
     color: aliceblue;
     margin: 0;
     margin-right: 10px;
@@ -266,7 +266,7 @@ header {
 
 .main-nav li a:hover,
 .main-nav li a:active {
-    border-bottom: 2px solid #bf6516;
+    border-bottom: 2px solid #79d400;
 }
 
 /*Mobile Nav*/
@@ -289,17 +289,17 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #fff;
+    background-color: #212121;
     z-index: 999;
-    -webkit-box-shadow: 0px 2px 2px rgb(236, 236, 236);
-            box-shadow: 0px 2px 2px rgb(236, 236, 236);
+    -webkit-box-shadow: 0px 2px 2px #292929;
+            box-shadow: 0px 2px 2px #292929;
     -webkit-transition: all 0.5s ease;
     transition: all 0.3s ease;
 }
 
 .sticky .row .main-nav li a,
 .sticky .row .main-nav li a:visited {
-    color: rgb(31, 31, 31);
+    color: rgb(224, 224, 224);
     padding-bottom: 17px;
     border-bottom: 2px solid transparent;
     -webkit-transition: border-bottom 0.2s, padding-bottom 0.2s;
@@ -308,10 +308,10 @@ header {
 
 .sticky .row .main-nav li a:hover,
 .sticky .row .main-nav li a:active {
-    border-bottom: 2px solid #bf6516;   
+    border-bottom: 2px solid #92ff00;
 }
 
-.sticky .logo-black {
+.sticky .logo-small {
     display: inline-block;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -335,6 +335,11 @@ header {
     color: rgb(49, 49, 49);
 }
 
+/* section with same style */
+.section-steps, .section-plans{
+  color: #ceecc3;
+  background-color: #252525 !important;
+}
 /*---------------------------------*/
 /* MEALS */
 /*---------------------------------*/
@@ -384,7 +389,7 @@ header {
 /*---------------------------------*/
 
 .section-steps {
-    background-color: rgb(241, 241, 241);
+    background-color: #f1f1f1;
 }
 
 .steps-col:first-child {
@@ -410,9 +415,9 @@ header {
 .works-step div {
     display: inline-block;
     float: left;
-    color: #e67e22;
+    color: #DCEDC8;
     font-size: 150%;
-    border: 2px solid #e67e22;
+    border: 2px solid #6fc300;
     border-radius: 50%;
     height: 55px;
     width: 55px;
@@ -452,13 +457,10 @@ header {
     transition: border-bottom 0.4s;
 }
 
-.city-box:hover {
-    border-bottom: 2px solid #e67e22;
-}
-
 .city-box img {
     width: 100%;
     margin-bottom: 20px;
+    border-radius: 4px;
 }
 
 .city-feature {
@@ -467,19 +469,19 @@ header {
 
 .twitter-link,
 .twitter-link:visited {
-    color: #e67e22;
+    color: #79d400;
     text-decoration: none;
     -webkit-transition: color 0.1s , border-bottom 0.1s;
     transition: color 0.1s , border-bottom 0.1s;
     font-weight: 300;
-    border-bottom: 1px solid #e67e22;
+    border-bottom: 1px solid #79d400;
     padding-bottom: 3px;
 }
 
 .twitter-link:hover,
 .twitter-link:active {
-    color: #bf6516;
-    border-bottom: 1px solid #bf6516;
+    color: #66b200;
+    border-bottom: 1px solid #66b200;
 }
 
 /*---------------------------------*/
@@ -516,12 +518,8 @@ cite img {
 /* SIGN UP PLANS */
 /*---------------------------------*/
 
-.section-plans {
-    background-color: rgb(241, 241, 241);
-}
-
 .plan-box {
-    background-color: #fff;
+    background-color: #313131;
     border-radius: 5px;
     width: 90%;
     margin: 0 auto;
@@ -529,25 +527,25 @@ cite img {
 
 .plan-box div {
     padding: 15px;
-    border-bottom: 1px solid rgb(240, 240, 240);
+    border-bottom: 1px solid #424242;
 }
 
 .plan-price {
     font-size: 260%;
     font-weight: 300;
     margin-bottom: 10px;
-    color: #e67e22;
+    color: #79d400;
 }
 
 .per-month, .per-meal {
-    font-size: 40%; 
+    font-size: 40%;
 }
 
 .plan-price-meal {
-    font-style: 80%; 
+    font-style: 80%;
 }
 
-.plan-box ul {  
+.plan-box ul {
     list-style: none;
 }
 
@@ -556,12 +554,12 @@ cite img {
 }
 
 .plan-box div {
-    -webkit-box-shadow: 0 2px 2px rgb(245, 245, 245);
-            box-shadow: 0 2px 2px rgb(245, 245, 245);
+    -webkit-box-shadow: 0 2px 2px #353535;
+            box-shadow: 0 2px 2px #353535;
 }
 
 .plan-box div:first-child {
-    background-color: rgb(250, 250, 250);
+    background-color: #313131;
 }
 
 .plan-box div:last-child {
@@ -587,14 +585,14 @@ select,
 textarea {
     width: 100%;
     padding: 7px 7px;
-    border-radius: 3px; 
+    border-radius: 3px;
     border: 1px solid rgb(214, 214, 214);
 }
 
 input[type=text]:focus,
 input[type=email]:focus,
 textarea:focus {
-    outline: 1px solid #e67e22;
+    outline: 1px solid #79d400;
 }
 
 textarea {
@@ -678,13 +676,27 @@ footer {
 .footer-nav li a:hover,
 .footer-nav li a:active {
     color: #fff;
-}  
+}
 
 footer p {
     text-align: center;
     color: #888;
     margin-top: 50px;
     font-size: 90%;
+}
+
+.abraham {
+    font-size: 80%;
+}
+
+.footer-link,
+.footer-link:visited {
+    transition: color 0.2s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+    color: #fff;
 }
 
 /*---------------------------------*/
@@ -700,7 +712,7 @@ footer p {
 
 .js--wp-1.animated,
 .js--wp-2.animated,
-.js--wp-3.animated, 
+.js--wp-3.animated,
 .js--wp-4.animated {
     opacity: 1;
 }
@@ -708,4 +720,9 @@ footer p {
 .fadeOutUp,
 .fadeInDown {
     animation-duration: 0.3s;
+}
+
+footer a{
+  color: rgb(189, 189, 189);
+  text-decoration: none;
 }
