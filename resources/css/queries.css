@@ -264,12 +264,11 @@
         font-size: 130%;
         text-align: left;
         border: 1px solid rgb(235, 235, 235);
-        border-radius: 6px
         padding: 20px;
     }
 
     .city-box:first-child:hover {
-        border-bottom: 2px solid #79d400;
+        border-bottom: 2px solid #e67e22;
     }
 
     /*---------------------------------*/
