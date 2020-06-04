@@ -1,62 +1,16 @@
+<?php
+session_start();
+error_reporting(1);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,700&display=swap" rel="stylesheet">
-    <!-- Fontawesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <!-- Normalize CSS -->
-    <link rel="stylesheet" href="vendors/css/normalize.css">
-    <!-- Grid CSS -->
-    <link rel="stylesheet" href="vendors/css/grid.css">
-    <!-- Animate CSS -->
-    <link rel="stylesheet" href="vendors/css/animate.css">
-    <!-- Main CSS file -->
-    <link rel="stylesheet" href="resources/css/style.css">
-    <!-- Media Queries CSS file -->
-    <link rel="stylesheet" href="resources/css/queries.css">
-
-    <!--Favicons-->
-    <link rel="apple-touch-icon" sizes="180x180" href="/resources/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/resources/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/resources/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/resources/favicons/site.webmanifest">
-    <link rel="mask-icon" href="/resources/favicons/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="/resources/favicons/favicon.ico">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="/resources/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
-    <title>Omnifood</title>
-</head>
+<?php include('head.php') ?>
 
 <body>
     <header>
-        <nav>
-            <div class="row">
-                <img src="resources/images/logo-white.png" alt="Omnifood logo" class="logo">
-                <img src="resources/images/logo.png" alt="Omnifood logo" class="logo-black">
-                <ul class="main-nav js--main-nav" id="main-nav">
-                    <li>
-                        <a href="#section-features">Food delivery</a>
-                    </li>
-                    <li>
-                        <a href="#section-steps">How it works</a>
-                    </li>
-                    <li>
-                        <a href="#section-cities">Our cities</a>
-                    </li>
-                    <li>
-                        <a href="#section-form">Sign up</a>
-                    </li>
-                </ul>
-                <a class="mobile-nav-icon js--nav-icon"><i class="fas fa-bars nav-icon"></i></a>
-            </div>
-        </nav>
+        <?php include('nav.php') ?>
         <div class="hero-text-box">
             <h1>Goodbye junk food.<br> Hello super healthy meals.</h1>
             <a class="btn btn-orange js--scroll-to-plans" href="#"><i class="fas fa-cart-plus"></i> I'm hungry </a>
@@ -316,10 +270,10 @@
                     <div>
                         <h3>Premium</h3>
                         <p class="plan-price">
-                            $399 <span class="per-month"> / month</span>
+                            $0 <span class="per-month"> / month</span>
                         </p>
                         <p class="plan-price-meal">
-                            That's only 13.30$ per meal
+                            That's only $0 per meal
                         </p>
                     </div>
                     <div>
@@ -331,7 +285,7 @@
                         </ul>
                     </div>
                     <div>
-                        <a href="#" class="signup-btn btn btn-orange">Sign up now</a>
+                        <a href="signup.php" class="signup-btn btn btn-orange">Sign up now</a>
                     </div>
                 </div>
             </div>
@@ -340,10 +294,10 @@
                     <div>
                         <h3>Pro</h3>
                         <p class="plan-price">
-                            149$ <span class="per-month"> / month</span>
+                            $0 <span class="per-month"> / month</span>
                         </p>
                         <p class="plan-price-meal">
-                            That's only 14.90$ per meal
+                            That's only $0 per meal
                         </p>
                     </div>
                     <div>
@@ -355,7 +309,7 @@
                         </ul>
                     </div>
                     <div>
-                        <a href="#" class="signup-btn btn btn-outline-orange">Sign up now</a>
+                        <a href="signup.php" class="signup-btn btn btn-outline-orange">Sign up now</a>
                     </div>
                 </div>
             </div>
@@ -364,7 +318,7 @@
                     <div>
                         <h3>Starter</h3>
                         <p class="plan-price">
-                            19$ <span class="per-meal"> / meal</span>
+                            $0 <span class="per-meal"> / meal</span>
                         </p>
                         <p class="plan-price-meal">
                             <br>
@@ -379,7 +333,7 @@
                         </ul>
                     </div>
                     <div>
-                        <a href="#" class="signup-btn btn btn-outline-orange">Sign up now</a>
+                        <a href="signup.php" class="signup-btn btn btn-outline-orange">Sign up now</a>
                     </div>
                 </div>
             </div>

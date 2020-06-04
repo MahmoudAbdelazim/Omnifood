@@ -687,6 +687,35 @@ footer p {
     font-size: 90%;
 }
 
+/***********************************/
+/* Signup */
+/***********************************/
+
+.signup-box {
+    width: 500px;
+    margin: auto;
+    margin-top: 3%;
+}
+
+.signup-heading {
+    color: white;
+    font-weight: 300;
+}
+
+.signup-box form input {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    height: 45px;
+    padding-left: 20px;
+}
+
+.signup-box form label {
+    color: white;
+    margin-bottom: 40px;
+}
+
 /*---------------------------------*/
 /* Animations */
 /*---------------------------------*/
