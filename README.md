@@ -1,2 +1,2 @@
 # omnifood
-A fictional food website
+A fictional Restuarant website built in HTML, CSS and JQuery.
