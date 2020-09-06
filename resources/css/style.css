@@ -694,7 +694,10 @@ footer p {
 .signup-box {
     width: 500px;
     margin: auto;
-    margin-top: 3%;
+    margin-top: 1%;
+    background-color: rgba(0, 0, 0, 0.329);
+    padding: 30px;
+    border-radius: 2%;
 }
 
 .signup-heading {
@@ -707,8 +710,9 @@ footer p {
     margin: auto;
     margin-bottom: 15px;
     margin-top: 10px;
-    height: 45px;
+    height: 42px;
     padding-left: 20px;
+    font-weight: 300;
 }
 
 .signup-box form label {
