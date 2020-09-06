@@ -6,24 +6,7 @@ error_reporting(1);
 <!DOCTYPE html>
 <html lang="en">
 
-<<<<<<< HEAD:index.php
 <?php include('head.php') ?>
-=======
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" href="vendors/css/normalize.css">
-    <link rel="stylesheet" href="vendors/css/grid.css">
-    <link rel="stylesheet" href="vendors/css/animate.css">
-    <link rel="stylesheet" href="resources/css/style.css">
-    <link rel="stylesheet" href="resources/css/queries.css">
-    <title>Omnifood</title>
-</head>
->>>>>>> parent of 375089f... Add favicons and optimize page load speed:index.html
 
 <body>
     <header>
